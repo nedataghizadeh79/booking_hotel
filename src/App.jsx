@@ -6,6 +6,7 @@ import CommonSearchedHotelLayout from "./components/Common Searched Hotel Layout
 import SearchedHotels from "./components/Hotels/SearchedHotels.jsx";
 import HotelsProvider from "./components/context/HotelsProvider.jsx";
 import Map from "./components/Map/Map.jsx";
+import SingleHotel from "./components/Single Hotel/SingleHotel.jsx";
 
  function App() {
     return (
@@ -15,8 +16,11 @@ import Map from "./components/Map/Map.jsx";
                     <Route path='/' element={<LocationList/>} />
                     <Route path='/hotels' element={<CommonSearchedHotelLayout/>} >
                         <Route index element={<SearchedHotels/>} />
-                        <Route path=":id" element={<div>each selected hotel (when you click on selected hotel)</div> } />
+                        <Route path=":id" element={<SingleHotel/>}  />
                     </Route>
+
+                    <Route path='/bookmarks' element={<div> hi </div> }  />
+
                 </Routes>
         </HotelsProvider>
     );

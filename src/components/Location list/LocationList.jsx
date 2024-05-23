@@ -13,7 +13,7 @@ export default function LocationList(){
                     {
                         data.map((item) => {
                             return <div className='locationItem' key={item.id}>
-                                <img src={item.picture_url.url} alt={item.name} />
+                                <img src={item.c} alt={item.name} />
                                 <div className='locationItemDesc'>
                                     <p className='location'> {item.smart_location} </p>
                                     <p className='name'>{item.name}</p>
