@@ -16,7 +16,6 @@ export default function SingleHotel(){
                     <br/>
                     {data.smart_location}
                 </div>
-                <img src={data.picture_url.url} alt={data.name} />
             </div>
         </div>
     )

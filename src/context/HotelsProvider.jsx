@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 import { useSearchParams } from "react-router-dom";
-import useFetch from "../../hooks/useFetch.jsx";
+import useFetch from "../hooks/useFetch.jsx";
 
 const HotelContext = createContext(null);
 
